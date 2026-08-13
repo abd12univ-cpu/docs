@@ -1,0 +1,102 @@
+---
+title: "La loi d'Ohm : résistance électrique et applications pratiques"
+sidebarTitle: "Loi d'Ohm"
+description: "Cours de Première sur la loi d'Ohm : relation U=RI, résistance électrique, caractéristique d'un dipôle, résistances en série et en parallèle."
+---
+
+La **loi d'Ohm** est l'une des lois les plus fondamentales de l'électricité. Elle décrit la relation entre la tension aux bornes d'un conducteur, l'intensité qui le traverse et sa résistance électrique. Maîtriser cette loi est indispensable pour analyser tout circuit électrique.
+
+## Énoncé de la loi d'Ohm
+
+> **Loi d'Ohm :** Pour un conducteur ohmique, la tension $U$ à ses bornes est proportionnelle à l'intensité $I$ qui le traverse.
+
+$$U = R \times I$$
+
+Où :
+- $U$ : tension en volts (V)
+- $R$ : résistance en ohms (Ω)
+- $I$ : intensité en ampères (A)
+
+Un composant qui suit la loi d'Ohm est appelé **conducteur ohmique** ou **résistor**.
+
+## La résistance électrique
+
+La **résistance** $R$ mesure l'opposition d'un conducteur au passage du courant électrique. Elle dépend de :
+- La **nature** du matériau (conducteur, semi-conducteur...)
+- Les **dimensions** du conducteur (longueur, section)
+- La **température**
+
+**Formule :** $R = \frac{U}{I}$
+
+**Exemple :** Une résistance soumise à U = 6 V laisse passer I = 0,3 A. Sa résistance est :
+R = U/I = 6/0,3 = **20 Ω**
+
+## La caractéristique courant-tension
+
+La **caractéristique I = f(U)** (ou U = f(I)) d'un dipôle est la courbe représentant l'intensité en fonction de la tension.
+
+- Pour un conducteur ohmique → droite passant par l'origine (pente = 1/R)
+- Pour une diode → courbe non linéaire (ne suit pas la loi d'Ohm)
+
+<Tip>
+  Pour mesurer la résistance d'un conducteur ohmique :
+  - Mesure la tension U avec un voltmètre (en dérivation)
+  - Mesure l'intensité I avec un ampèremètre (en série)
+  - Calcule R = U/I
+</Tip>
+
+## Résistances en série
+
+Pour des résistances montées en série, la résistance équivalente est :
+
+$$R_{eq} = R_1 + R_2 + R_3 + \ldots$$
+
+La résistance totale est plus grande que chaque résistance individuelle.
+
+## Résistances en parallèle (dérivation)
+
+Pour des résistances montées en parallèle, la résistance équivalente vérifie :
+
+$$\frac{1}{R_{eq}} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + \ldots$$
+
+Pour deux résistances en parallèle :
+$$R_{eq} = \frac{R_1 \times R_2}{R_1 + R_2}$$
+
+La résistance totale est plus petite que la plus petite résistance individuelle.
+
+## Exemple résolu
+
+**Énoncé :** Deux résistances R₁ = 4 Ω et R₂ = 6 Ω sont montées en série, alimentées par une pile de 10 V. Calcule la résistance équivalente, l'intensité du circuit et la tension aux bornes de chaque résistance.
+
+**Solution :**
+```
+Résistance équivalente (série) :
+  R_eq = R₁ + R₂ = 4 + 6 = 10 Ω
+
+Intensité (loi d'Ohm globale) :
+  U = R_eq × I → I = U/R_eq = 10/10 = 1 A
+
+Tension aux bornes de R₁ :
+  U₁ = R₁ × I = 4 × 1 = 4 V
+
+Tension aux bornes de R₂ :
+  U₂ = R₂ × I = 6 × 1 = 6 V
+
+Vérification (loi des mailles) : U₁ + U₂ = 4 + 6 = 10 V = E ✓
+```
+
+## Exercices d'application
+
+<Accordion title="Exercice 1 : Application de la loi d'Ohm">
+  Une résistance de R = 150 Ω est traversée par un courant I = 0,04 A. Calcule la tension à ses bornes.
+  
+  **Correction :**
+  U = R × I = 150 × 0,04 = **6 V**
+</Accordion>
+
+<Accordion title="Exercice 2 : Résistances en parallèle">
+  R₁ = 6 Ω et R₂ = 12 Ω sont montées en parallèle. Calcule la résistance équivalente.
+  
+  **Correction :**
+  R_eq = (R₁ × R₂) / (R₁ + R₂) = (6 × 12) / (6 + 12) = 72 / 18 = **4 Ω**
+</Accordion>

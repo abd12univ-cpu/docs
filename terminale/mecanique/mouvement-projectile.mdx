@@ -1,0 +1,106 @@
+---
+title: "Mouvement d'un projectile : équations horaires et trajectoire parabolique"
+sidebarTitle: "Mouvement Projectile"
+description: "Cours de Terminale sur le mouvement d'un projectile : équations horaires, trajectoire parabolique, portée et hauteur maximale. Méthode complète avec exemples résolus."
+---
+
+Le **mouvement d'un projectile** (ou tir parabolique) est l'étude du mouvement d'un objet soumis uniquement à son poids (sans frottement). C'est l'une des applications les plus classiques de la deuxième loi de Newton en Terminale.
+
+## Hypothèses du modèle
+
+Dans le modèle du projectile :
+- L'objet est assimilé à un **point matériel**
+- La seule force exercée est le **poids** (pas de frottement ni de poussée d'Archimède)
+- L'accélération de la pesanteur est **uniforme** : g = 9,8 m·s⁻²
+- L'axe $x$ est horizontal, l'axe $y$ est vertical vers le haut
+
+<Note>
+  Ces hypothèses sont valables pour des objets denses et des distances courtes. Pour un avion ou un satellite, il faut des modèles plus complexes.
+</Note>
+
+## Établissement des équations horaires
+
+Soient v₀ la vitesse initiale et α l'angle de lancement par rapport à l'horizontal.
+
+### Décomposition de la vitesse initiale
+
+- $v_{0x} = v_0 \cos(\alpha)$ (composante horizontale)
+- $v_{0y} = v_0 \sin(\alpha)$ (composante verticale)
+
+### Application de la 2e loi de Newton
+
+**Axe horizontal (x) :** aucune force → accélération nulle
+$$a_x = 0 \Rightarrow v_x = v_{0x} = v_0 \cos(\alpha)$$
+$$x(t) = v_0 \cos(\alpha) \cdot t$$
+
+**Axe vertical (y) :** seul le poids → accélération $-g$
+$$a_y = -g \Rightarrow v_y(t) = v_{0y} - g \cdot t = v_0 \sin(\alpha) - gt$$
+$$y(t) = v_0 \sin(\alpha) \cdot t - \frac{1}{2} g t^2$$
+
+## Équations récapitulatives
+
+| Grandeur | Axe horizontal | Axe vertical |
+|----------|---------------|-------------|
+| Accélération | $a_x = 0$ | $a_y = -g$ |
+| Vitesse | $v_x = v_0 \cos(\alpha)$ | $v_y = v_0 \sin(\alpha) - gt$ |
+| Position | $x = v_0 \cos(\alpha) \cdot t$ | $y = v_0 \sin(\alpha) \cdot t - \frac{1}{2}gt^2$ |
+
+## Équation de la trajectoire
+
+En éliminant $t$ entre les deux équations de position :
+
+$$y = x \tan(\alpha) - \frac{g}{2 v_0^2 \cos^2(\alpha)} x^2$$
+
+C'est l'équation d'une **parabole** : la trajectoire d'un projectile est parabolique.
+
+## Hauteur maximale et portée
+
+**Hauteur maximale** (atteinte quand $v_y = 0$) :
+$$t_{max} = \frac{v_0 \sin(\alpha)}{g}, \quad h_{max} = \frac{v_0^2 \sin^2(\alpha)}{2g}$$
+
+**Portée** (distance horizontale au retour au niveau initial) :
+$$R = \frac{v_0^2 \sin(2\alpha)}{g}$$
+
+<Tip>
+  La portée est maximale pour α = 45°. Pour tout autre angle θ, sin(2θ) = sin(2(90°-θ)), donc deux angles complémentaires donnent la même portée.
+</Tip>
+
+## Exemple résolu complet
+
+**Énoncé :** Un ballon est lancé avec v₀ = 20 m·s⁻¹ à α = 30° au-dessus de l'horizontal depuis le sol (y₀ = 0). Calcule :
+a) La hauteur maximale
+b) La portée du projectile
+c) La durée totale de vol
+
+**Solution :**
+```
+Données :
+  v₀ = 20 m·s⁻¹, α = 30°, g = 9,8 m·s⁻²
+
+a) Hauteur maximale :
+  h_max = v₀² sin²(α) / (2g)
+  h_max = 20² × sin²(30°) / (2 × 9,8)
+  h_max = 400 × 0,25 / 19,6
+  h_max = 100 / 19,6 ≈ 5,1 m
+
+b) Portée :
+  R = v₀² × sin(2α) / g
+  R = 400 × sin(60°) / 9,8
+  R = 400 × 0,866 / 9,8 ≈ 35,3 m
+
+c) Durée totale de vol (retour à y = 0) :
+  y(t) = 0 → v₀ sin(α) × t - ½g t² = 0
+  t(v₀ sin(α) - ½g t) = 0
+  t = 0 (départ) ou t = 2v₀ sin(α)/g
+  t = 2 × 20 × sin(30°) / 9,8 = 2 × 20 × 0,5 / 9,8 ≈ 2,04 s
+```
+
+## Exercice d'application
+
+<Accordion title="Exercice : Tir horizontal">
+  Une bille est lancée horizontalement (α = 0°) depuis une table à h = 1,8 m de hauteur avec v₀ = 5 m·s⁻¹. Calcule le temps de chute et la distance horizontale parcourue.
+  
+  **Correction :**
+  - Chute verticale : h = ½g t² → t = √(2h/g) = √(2 × 1,8/9,8) = √(0,367) ≈ 0,61 s
+  - Distance horizontale : x = v₀ × t = 5 × 0,61 ≈ **3,0 m**
+</Accordion>

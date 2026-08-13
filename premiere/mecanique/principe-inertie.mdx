@@ -1,0 +1,100 @@
+---
+title: "Le principe d'inertie : première loi de Newton en Première"
+sidebarTitle: "Principe d'Inertie"
+description: "Cours de Première sur le principe d'inertie (1ère loi de Newton) : énoncé, applications, situations d'équilibre et de mouvement rectiligne uniforme."
+---
+
+Le **principe d'inertie** est la première des lois fondamentales de la mécanique newtonienne. Il décrit comment se comporte un objet en l'absence de toute perturbation extérieure. Sa maîtrise est indispensable pour aborder l'étude des mouvements en Première.
+
+## Énoncé du principe d'inertie
+
+> **Principe d'inertie (1ère loi de Newton) :** Dans un référentiel galiléen, tout corps sur lequel la somme des forces est nulle est soit au repos, soit en mouvement rectiligne uniforme (MRU).
+
+Et réciproquement :
+> Si un corps est au repos ou en MRU, alors la somme des forces qui s'exercent sur lui est nulle.
+
+$$\sum \vec{F} = \vec{0} \iff \text{repos ou MRU}$$
+
+## Le référentiel galiléen
+
+Un **référentiel galiléen** (ou inertiel) est un référentiel dans lequel le principe d'inertie est valable. En pratique, on considère que :
+- Le **référentiel terrestre** est galiléen pour des expériences de courte durée
+- Le **référentiel géocentrique** est galiléen pour l'étude des satellites
+- Le **référentiel héliocentrique** est galiléen pour l'étude du système solaire
+
+<Note>
+  Un référentiel en accélération (voiture qui freine, ascenseur en démarrage) n'est **pas** galiléen : le principe d'inertie ne s'y applique pas directement.
+</Note>
+
+## Situations d'application
+
+### Objet en équilibre (au repos)
+
+Si un objet est immobile dans un référentiel galiléen, alors la somme vectorielle de toutes les forces est nulle.
+
+**Exemple :** Un livre posé sur une table est soumis à :
+- Son poids $\vec{P}$ vers le bas
+- La réaction normale $\vec{N}$ de la table vers le haut
+
+Le livre est immobile → $\vec{P} + \vec{N} = \vec{0}$ → P = N
+
+### Mouvement rectiligne uniforme (MRU)
+
+Si un objet se déplace en ligne droite à vitesse constante, la somme des forces est nulle.
+
+**Exemple :** Un traineau glisse sur une glace parfaitement lisse à vitesse constante. Les forces qui s'exercent sur lui (poids et réaction normale) se compensent, et il n'y a pas de frottement. La somme des forces est nulle.
+
+## Application du principe d'inertie
+
+**Méthode :** Pour vérifier si le principe d'inertie s'applique à une situation :
+
+<Steps>
+  <Step title="Identifier le système">
+    Détermine l'objet étudié (le système).
+  </Step>
+  <Step title="Faire l'inventaire des forces">
+    Liste toutes les forces qui s'exercent sur le système et leurs caractéristiques.
+  </Step>
+  <Step title="Calculer la somme vectorielle">
+    Calcule la somme des forces. Si elle est nulle, le système est en repos ou en MRU.
+  </Step>
+  <Step title="Conclure sur le mouvement">
+    Déduis le type de mouvement selon que la somme est nulle ou non.
+  </Step>
+</Steps>
+
+## Exemple résolu
+
+**Énoncé :** Une bille se déplace à vitesse constante v = 3 m·s⁻¹ dans une direction horizontale sur une surface. Que peut-on dire de la somme des forces ?
+
+**Solution :**
+```
+Mouvement rectiligne uniforme (vitesse constante, direction rectiligne)
+→ D'après le principe d'inertie :
+  ΣF = 0
+
+Conclusion : La somme des forces qui s'exercent sur la bille est nulle.
+Les forces se compensent exactement (poids = réaction normale, absence de frottement).
+```
+
+## Exercices d'application
+
+<Accordion title="Exercice 1 : Situation d'équilibre">
+  Un tableau de masse m = 2 kg est accroché à un mur par deux fils symétriques faisant chacun un angle de 30° avec la verticale. Que vaut la tension dans chaque fil ?
+  
+  **Correction :**
+  - Le tableau est en équilibre : ΣF = 0
+  - Bilan des forces : poids P = mg = 2 × 9,8 = 19,6 N (vers le bas), tensions T₁ et T₂ (en diagonale vers le haut)
+  - Par symétrie : T₁ = T₂ = T
+  - Composante verticale : 2T × cos(30°) = P → T = P / (2 cos30°) = 19,6 / (2 × 0,866) ≈ **11,3 N**
+</Accordion>
+
+<Accordion title="Exercice 2 : MRU ou non ?">
+  Une voiture roule à 90 km/h sur une autoroute en ligne droite. Son moteur fournit une force motrice de 1500 N. Quelle est la valeur de la force de résistance de l'air ?
+  
+  **Correction :**
+  La voiture est en MRU (vitesse constante, direction rectiligne) → ΣF = 0
+  Force motrice + Force de résistance = 0
+  1500 + F_résistance = 0
+  F_résistance = **-1500 N** (la résistance vaut 1500 N, dans le sens opposé au mouvement)
+</Accordion>

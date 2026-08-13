@@ -1,0 +1,100 @@
+---
+title: "Les trois lois de Newton : énoncés, applications et démonstrations"
+sidebarTitle: "Lois de Newton"
+description: "Cours de Terminale sur les trois lois de Newton : principe d'inertie, relation fondamentale de la dynamique et principe des actions réciproques avec applications."
+---
+
+Les **trois lois de Newton** constituent le fondement de la mécanique classique. Formulées au XVIIe siècle, elles permettent de décrire et prévoir le mouvement de tout objet macroscopique à des vitesses bien inférieures à celle de la lumière. Ce cours approfondit leur maîtrise au niveau Terminale.
+
+## Première loi de Newton : Principe d'inertie
+
+> Dans un référentiel galiléen, un système sur lequel la somme des forces extérieures est nulle est soit au repos, soit en mouvement rectiligne uniforme.
+
+$$\sum \vec{F}_{ext} = \vec{0} \iff \vec{v} = \text{constante}$$
+
+**Référentiels galiléens courants :**
+- Référentiel terrestre (pour les expériences courtes)
+- Référentiel géocentrique (satellites)
+- Référentiel héliocentrique (planètes)
+
+## Deuxième loi de Newton : Principe fondamental de la dynamique
+
+> Dans un référentiel galiléen, la somme vectorielle des forces extérieures appliquées à un système est égale à la dérivée de la quantité de mouvement par rapport au temps.
+
+Pour une masse constante :
+
+$$\sum \vec{F}_{ext} = m \vec{a}$$
+
+Ou sous forme développée :
+
+$$\sum \vec{F}_{ext} = m \frac{d\vec{v}}{dt}$$
+
+En Terminale, cette loi est souvent appliquée par **projection sur les axes** d'un repère adapté à la situation.
+
+## Troisième loi de Newton : Principe des actions réciproques
+
+> Lorsqu'un corps A exerce une force sur un corps B, alors B exerce sur A une force égale en valeur, de même direction, mais de sens opposé.
+
+$$\vec{F}_{A \to B} = -\vec{F}_{B \to A}$$
+
+<Note>
+  Les forces d'action-réaction s'exercent sur **deux objets différents**. Elles ne se compensent donc jamais : pour étudier l'équilibre d'un objet, on ne considère que les forces exercées **sur cet objet**.
+</Note>
+
+**Exemple :** Un livre posé sur une table.
+- Le livre exerce son poids sur la table (vers le bas)
+- La table exerce une réaction normale sur le livre (vers le haut)
+Ces deux forces forment un couple action-réaction.
+
+## Application : Dynamique sur un plan incliné
+
+**Énoncé :** Un objet de masse m = 2 kg glisse sans frottement sur un plan incliné à θ = 45°. Calcule son accélération et sa vitesse après t = 3 s (départ depuis le repos).
+
+**Solution :**
+```
+Bilan des forces sur l'objet (axes : x le long du plan vers le bas, y perpendiculaire au plan) :
+  - Poids P = mg = 2 × 9,8 = 19,6 N
+    - Composante x : P_x = mg sin(θ) = 19,6 × sin(45°) = 13,9 N
+    - Composante y : P_y = -mg cos(θ) = -13,9 N
+  - Réaction normale N (suivant y) : N = mg cos(θ) = 13,9 N
+
+Application de la 2e loi (axe x) :
+  ΣF_x = m × a_x
+  mg sin(θ) = m × a
+  a = g sin(θ) = 9,8 × sin(45°) ≈ 6,93 m·s⁻²
+
+Vitesse après t = 3 s (départ depuis le repos, donc v₀ = 0) :
+  v = v₀ + a × t = 0 + 6,93 × 3 = 20,8 m·s⁻¹
+
+Conclusion : L'accélération est a ≈ 6,93 m·s⁻² et la vitesse après 3 s est v ≈ 20,8 m·s⁻¹.
+```
+
+## Les équations horaires du mouvement
+
+Pour un mouvement à accélération constante $a$ avec la vitesse initiale $v_0$ et la position initiale $x_0$ :
+
+| Grandeur | Équation horaire |
+|----------|------------------|
+| Accélération | $a(t) = a$ (constante) |
+| Vitesse | $v(t) = v_0 + a \cdot t$ |
+| Position | $x(t) = x_0 + v_0 t + \frac{1}{2} a t^2$ |
+| Relation v-x | $v^2 = v_0^2 + 2a(x - x_0)$ |
+
+## Exercices d'application
+
+<Accordion title="Exercice 1 : Troisième loi de Newton">
+  Décris les couples action-réaction lors d'une collision entre deux voitures A et B.
+  
+  **Correction :**
+  - A exerce sur B une force F (vers la gauche si B est à gauche)
+  - B exerce sur A une force -F (vers la droite), égale en valeur et opposée en sens
+  Ces deux forces ne s'annulent pas car elles s'exercent sur des objets différents.
+</Accordion>
+
+<Accordion title="Exercice 2 : Équations horaires">
+  Une voiture part du repos et accélère à a = 2 m·s⁻². Calcule sa vitesse et sa position après t = 5 s.
+  
+  **Correction :**
+  - v(5) = 0 + 2 × 5 = **10 m·s⁻¹**
+  - x(5) = 0 + 0 × 5 + ½ × 2 × 5² = ½ × 2 × 25 = **25 m**
+</Accordion>

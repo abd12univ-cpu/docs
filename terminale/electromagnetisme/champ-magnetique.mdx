@@ -1,0 +1,100 @@
+---
+title: "Le champ magnétique : sources, propriétés et force de Lorentz"
+sidebarTitle: "Champ Magnétique"
+description: "Cours de Terminale sur le champ magnétique : sources (aimants, courants), lignes de champ, force de Lorentz sur une charge en mouvement et force de Laplace."
+---
+
+Le **champ magnétique** explique les forces exercées par les aimants et les conducteurs parcourus par un courant. Il est indispensable pour comprendre le fonctionnement des moteurs électriques, des transformateurs et de nombreux appareils technologiques.
+
+## Qu'est-ce que le champ magnétique ?
+
+Le **champ magnétique** $\vec{B}$ est un champ vectoriel qui décrit l'influence magnétique en tout point de l'espace. Il est créé par :
+- Les **aimants permanents**
+- Les **courants électriques** (conducteurs, bobines, solénoïdes)
+- La Terre (le champ géomagnétique)
+
+**Unité :** le **tesla (T)**
+
+## Sources du champ magnétique
+
+### Aimant droit
+Les lignes de champ vont du **pôle Nord** au **pôle Sud** à l'extérieur de l'aimant, et du pôle Sud au pôle Nord à l'intérieur.
+
+### Fil rectiligne parcouru par un courant
+Le champ magnétique autour d'un fil rectiligne infini parcouru par un courant I est :
+$$B = \frac{\mu_0 I}{2\pi r}$$
+
+Où :
+- $\mu_0 = 4\pi \times 10^{-7}$ T·m·A⁻¹ : perméabilité magnétique du vide
+- $r$ : distance au fil en mètres
+
+Les lignes de champ sont des **cercles concentriques** autour du fil. La direction du champ est donnée par la **règle de la main droite** (ou de la règle du tire-bouchon).
+
+### Solénoïde
+À l'intérieur d'un solénoïde de n spires par unité de longueur parcouru par un courant I :
+$$B = \mu_0 n I$$
+
+Le champ est **uniforme** et parallèle à l'axe du solénoïde.
+
+## La force de Lorentz
+
+Une **charge électrique** $q$ se déplaçant à la vitesse $\vec{v}$ dans un champ magnétique $\vec{B}$ subit la **force de Lorentz** :
+
+$$\vec{F} = q \vec{v} \times \vec{B}$$
+
+**Propriétés :**
+- La force est **perpendiculaire** au plan formé par $\vec{v}$ et $\vec{B}$
+- Elle ne modifie pas la **valeur** de la vitesse (pas de travail), seulement sa **direction**
+- Si la charge se déplace en parallèle au champ : F = 0
+
+**Valeur de la force de Lorentz :**
+$$F = |q| \cdot v \cdot B \cdot \sin(\theta)$$
+
+Où θ est l'angle entre $\vec{v}$ et $\vec{B}$.
+
+## La force de Laplace
+
+Un fil conducteur de longueur $L$ portant un courant $I$ dans un champ magnétique $\vec{B}$ subit la **force de Laplace** :
+
+$$\vec{F} = I \vec{L} \times \vec{B}$$
+
+Valeur :
+$$F = I \cdot L \cdot B \cdot \sin(\theta)$$
+
+La direction est donnée par la **règle de la main droite** ou par la **règle des trois doigts** (règle de Fleming).
+
+<Note>
+  La force de Lorentz s'applique à une **charge** en mouvement, la force de Laplace à un **conducteur** parcouru par un courant. Les deux sont des manifestations du même phénomène.
+</Note>
+
+## Exemple résolu
+
+**Énoncé :** Un proton (q = 1,6 × 10⁻¹⁹ C) se déplace à v = 3,0 × 10⁶ m·s⁻¹ perpendiculairement à un champ B = 0,2 T. Calcule la force de Lorentz.
+
+**Solution :**
+```
+Angle θ = 90° (perpendiculaire) → sin(90°) = 1
+
+F = |q| × v × B × sin(θ)
+F = 1,6 × 10⁻¹⁹ × 3,0 × 10⁶ × 0,2 × 1
+F = 9,6 × 10⁻¹⁴ N
+
+Conclusion : La force de Lorentz vaut F = 9,6 × 10⁻¹⁴ N.
+```
+
+## Exercices d'application
+
+<Accordion title="Exercice 1 : Force de Laplace">
+  Un fil de L = 0,5 m portant I = 10 A est placé perpendiculairement à un champ B = 0,3 T. Calcule la force de Laplace.
+  
+  **Correction :**
+  F = I × L × B × sin(90°) = 10 × 0,5 × 0,3 × 1 = **1,5 N**
+</Accordion>
+
+<Accordion title="Exercice 2 : Champ d'un solénoïde">
+  Un solénoïde de 1000 spires sur 20 cm est parcouru par I = 2 A. Calcule le champ magnétique à l'intérieur. (μ₀ = 4π × 10⁻⁷ T·m·A⁻¹)
+  
+  **Correction :**
+  n = 1000/0,20 = 5000 spires/m
+  B = μ₀ × n × I = 4π × 10⁻⁷ × 5000 × 2 = 4π × 10⁻³ ≈ **1,26 × 10⁻² T = 12,6 mT**
+</Accordion>

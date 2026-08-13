@@ -1,0 +1,110 @@
+---
+title: "Énergie cinétique et théorème de l'énergie cinétique en Première"
+sidebarTitle: "Énergie Cinétique"
+description: "Cours de Première sur l'énergie cinétique : définition, formule, théorème de l'énergie cinétique, applications et exercices résolus."
+---
+
+L'énergie cinétique est l'énergie que possède un objet du fait de son mouvement. Le **théorème de l'énergie cinétique** établit le lien entre les forces exercées sur un objet et la variation de cette énergie. C'est un outil puissant pour analyser les mouvements sans avoir à résoudre des équations différentielles.
+
+## L'énergie cinétique
+
+L'**énergie cinétique** d'un objet de masse $m$ se déplaçant à la vitesse $v$ est :
+
+$$E_c = \frac{1}{2} m v^2$$
+
+- $m$ : masse en kilogrammes (kg)
+- $v$ : vitesse en mètres par seconde (m·s⁻¹)
+- $E_c$ : énergie cinétique en joules (J)
+
+**Propriétés :**
+- L'énergie cinétique est toujours **positive ou nulle**
+- Elle est nulle quand l'objet est au repos (v = 0)
+- Elle augmente avec le carré de la vitesse : doubler la vitesse multiplie l'énergie cinétique par 4
+
+## Le théorème de l'énergie cinétique
+
+> **Théorème de l'énergie cinétique :** La variation d'énergie cinétique d'un système est égale à la somme des travaux de toutes les forces extérieures appliquées à ce système.
+
+$$\Delta E_c = E_{c,finale} - E_{c,initiale} = \sum W(\vec{F})$$
+
+Où $W(\vec{F})$ est le travail de chaque force.
+
+## Le travail d'une force
+
+Le **travail** d'une force $\vec{F}$ lors d'un déplacement $\vec{d}$ est :
+
+$$W = F \times d \times \cos(\alpha)$$
+
+- $\alpha$ : angle entre la force et le déplacement
+- W > 0 : force motrice (accélère l'objet)
+- W < 0 : force résistante (freine l'objet)
+- W = 0 : force perpendiculaire (ne fait pas varier la vitesse)
+
+<Note>
+  La **réaction normale** et le **poids sur un déplacement horizontal** ont un travail nul (force perpendiculaire au déplacement).
+</Note>
+
+## Exemple résolu
+
+**Énoncé :** Un cycliste de masse totale (vélo + cycliste) m = 80 kg freine depuis v₁ = 10 m·s⁻¹ jusqu'à l'arrêt (v₂ = 0). Calcule le travail exercé par les freins.
+
+**Solution :**
+```
+Données :
+  m = 80 kg
+  v₁ = 10 m·s⁻¹ (vitesse initiale)
+  v₂ = 0 m·s⁻¹ (vitesse finale)
+
+Énergie cinétique initiale :
+  E_c1 = ½ × 80 × 10² = 4000 J
+
+Énergie cinétique finale :
+  E_c2 = ½ × 80 × 0² = 0 J
+
+Variation d'énergie cinétique :
+  ΔE_c = E_c2 - E_c1 = 0 - 4000 = -4000 J
+
+D'après le théorème de l'énergie cinétique :
+  ΣW = ΔE_c = -4000 J
+
+Conclusion : Le travail total des forces de freinage est W = -4000 J.
+Le signe négatif confirme que les freins résistent au mouvement.
+```
+
+## Énergie mécanique et conservation
+
+L'**énergie mécanique** est la somme de l'énergie cinétique et de l'énergie potentielle de pesanteur :
+
+$$E_m = E_c + E_{pp} = \frac{1}{2}mv^2 + mgh$$
+
+En l'**absence de frottement**, l'énergie mécanique se conserve :
+
+$$E_m = \text{constante}$$
+
+**Application :** Une bille lâchée d'une hauteur h sans vitesse initiale. À quelle vitesse arrive-t-elle en bas ?
+
+```
+Conservation de l'énergie mécanique (sans frottement) :
+  E_m initiale = E_m finale
+  mgh + 0 = 0 + ½mv²
+  v = √(2gh)
+  v = √(2 × 9,8 × h)
+```
+
+## Exercices d'application
+
+<Accordion title="Exercice 1 : Calculer une énergie cinétique">
+  Un train de masse 500 000 kg roule à 72 km/h. Calcule son énergie cinétique.
+  
+  **Correction :**
+  v = 72 km/h = 72/3,6 = 20 m·s⁻¹
+  E_c = ½ × 500 000 × 20² = ½ × 500 000 × 400 = **100 000 000 J = 100 MJ**
+</Accordion>
+
+<Accordion title="Exercice 2 : Conservation de l'énergie mécanique">
+  Une balle de masse 0,2 kg est lâchée sans vitesse initiale depuis h = 5 m. Quelle est sa vitesse juste avant de toucher le sol ? (sans frottement)
+  
+  **Correction :**
+  E_m conservée → mgh = ½mv²
+  v = √(2gh) = √(2 × 9,8 × 5) = √98 ≈ **9,9 m·s⁻¹**
+</Accordion>

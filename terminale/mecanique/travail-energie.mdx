@@ -1,0 +1,113 @@
+---
+title: "Travail et énergie mécanique : théorèmes et conservation en Terminale"
+sidebarTitle: "Travail et Énergie"
+description: "Cours de Terminale sur le travail et l'énergie mécanique : théorème de l'énergie cinétique, énergie potentielle, conservation de l'énergie mécanique et dissipation."
+---
+
+L'approche énergétique de la mécanique permet de résoudre des problèmes complexes sans connaître le détail des forces à chaque instant. Ce cours approfondit les concepts de travail, d'énergie cinétique, d'énergie potentielle et les théorèmes qui les relient, au niveau Terminale.
+
+## Le travail d'une force
+
+Le **travail** d'une force constante $\vec{F}$ lors d'un déplacement $\vec{d}$ est :
+
+$$W_{\vec{F}} = \vec{F} \cdot \vec{d} = F \cdot d \cdot \cos(\alpha)$$
+
+- $W > 0$ : force **motrice** (dans le sens du déplacement)
+- $W < 0$ : force **résistante** (s'oppose au déplacement)
+- $W = 0$ : force **perpendiculaire** (ne fait pas de travail)
+
+## Le théorème de l'énergie cinétique (TEC)
+
+> La variation d'énergie cinétique d'un système entre deux instants est égale à la somme algébrique des travaux de toutes les forces extérieures appliquées au système entre ces deux instants.
+
+$$\Delta E_c = E_{c,f} - E_{c,i} = \sum W_i$$
+
+$$\frac{1}{2}mv_f^2 - \frac{1}{2}mv_i^2 = W_{poids} + W_{normale} + W_{frottement} + \ldots$$
+
+## L'énergie potentielle de pesanteur
+
+L'**énergie potentielle de pesanteur** d'un objet de masse $m$ à la hauteur $h$ est :
+
+$$E_{pp} = mgh$$
+
+La hauteur $h$ est mesurée par rapport à un **niveau de référence** choisi (souvent le sol ou la position initiale).
+
+**Travail du poids :**
+
+$$W_{poids} = -\Delta E_{pp} = -(mgh_f - mgh_i) = mg(h_i - h_f)$$
+
+Le travail du poids est positif quand l'objet descend (perte d'E_pp) et négatif quand il monte (gain d'E_pp).
+
+## L'énergie mécanique
+
+L'**énergie mécanique** est la somme de l'énergie cinétique et de l'énergie potentielle :
+
+$$E_m = E_c + E_{pp} = \frac{1}{2}mv^2 + mgh$$
+
+### Conservation de l'énergie mécanique
+
+En l'absence de forces dissipatives (pas de frottement) :
+$$E_m = \text{constante} \quad \Leftrightarrow \quad \Delta E_m = 0$$
+
+### Non-conservation avec frottement
+
+En présence de forces de frottement :
+$$\Delta E_m = W_{frottement} < 0$$
+
+L'énergie mécanique **diminue** : l'énergie est convertie en chaleur.
+
+## Exemple résolu — Montagne russe
+
+**Énoncé :** Un wagon de 500 kg démarre du point A (h_A = 20 m, v_A = 0) sans frottement. Calcule sa vitesse au point B (h_B = 5 m).
+
+**Solution :**
+```
+Conservation de l'énergie mécanique (sans frottement) :
+  E_m(A) = E_m(B)
+  ½mv_A² + mgh_A = ½mv_B² + mgh_B
+  0 + mgh_A = ½mv_B² + mgh_B  (car v_A = 0)
+  mgh_A - mgh_B = ½mv_B²
+  g(h_A - h_B) = ½v_B²
+  v_B = √(2g(h_A - h_B))
+  v_B = √(2 × 9,8 × (20 - 5))
+  v_B = √(2 × 9,8 × 15)
+  v_B = √294 ≈ 17,1 m·s⁻¹
+
+Conclusion : La vitesse du wagon au point B est v_B ≈ 17,1 m·s⁻¹.
+```
+
+## Exemple résolu — Avec frottement
+
+**Énoncé :** Le même wagon (500 kg) parcourt une distance d = 30 m entre A et B. Une force de frottement f = 200 N s'oppose au mouvement. Quelle est la vitesse en B ?
+
+**Solution :**
+```
+Travail du frottement :
+  W_f = -f × d = -200 × 30 = -6000 J
+
+Variation d'énergie mécanique :
+  ΔE_m = W_f
+  E_m(B) - E_m(A) = -6000 J
+  (½mv_B² + mgh_B) - (½mv_A² + mgh_A) = -6000
+  ½ × 500 × v_B² + 500×9,8×5 - 0 - 500×9,8×20 = -6000
+  250 v_B² + 24500 - 98000 = -6000
+  250 v_B² = -6000 - 24500 + 98000
+  250 v_B² = 67500
+  v_B² = 270
+  v_B ≈ 16,4 m·s⁻¹
+```
+
+## Exercice d'application
+
+<Accordion title="Exercice : Toboggan avec frottement">
+  Un enfant de 30 kg glisse depuis le sommet d'un toboggan (h = 3 m, v = 0) jusqu'en bas (h = 0). Le travail des frottements vaut W_f = -200 J. Calcule la vitesse en bas du toboggan.
+  
+  **Correction :**
+  ΔE_m = W_f
+  ½mv² + 0 - (0 + mgh) = W_f
+  ½ × 30 × v² - 30 × 9,8 × 3 = -200
+  15v² - 882 = -200
+  15v² = 682
+  v² = 45,5
+  v ≈ **6,7 m·s⁻¹**
+</Accordion>

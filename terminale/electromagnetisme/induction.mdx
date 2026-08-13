@@ -1,0 +1,103 @@
+---
+title: "L'induction électromagnétique : loi de Faraday et loi de Lenz"
+sidebarTitle: "Induction"
+description: "Cours de Terminale sur l'induction électromagnétique : flux magnétique, loi de Faraday, loi de Lenz, force électromotrice induite et applications (alternateur, transformateur)."
+---
+
+L'**induction électromagnétique** est le phénomène par lequel une variation de champ magnétique crée une tension électrique. Découverte par Faraday en 1831, cette loi est à la base de la production de toute l'électricité que nous consommons (alternateurs, transformateurs).
+
+## Le flux magnétique
+
+Le **flux magnétique** $\Phi$ à travers une surface $S$ dans un champ magnétique $\vec{B}$ est :
+
+$$\Phi = B \cdot S \cdot \cos(\theta)$$
+
+Où :
+- $B$ : valeur du champ magnétique en teslas (T)
+- $S$ : aire de la surface en m²
+- $\theta$ : angle entre $\vec{B}$ et la normale à la surface
+- $\Phi$ : flux magnétique en **webers (Wb)** = T·m²
+
+**Cas particuliers :**
+- $\vec{B}$ perpendiculaire à la surface (θ = 0°) : $\Phi = B \cdot S$ (flux maximal)
+- $\vec{B}$ parallèle à la surface (θ = 90°) : $\Phi = 0$ (flux nul)
+
+## La loi de Faraday
+
+> **Loi de Faraday :** Toute variation du flux magnétique à travers un circuit produit une force électromotrice (f.é.m.) induite dont la valeur est égale à l'opposé du taux de variation du flux.
+
+$$e = -\frac{d\Phi}{dt}$$
+
+Où :
+- $e$ : force électromotrice induite en volts (V)
+- $d\Phi/dt$ : dérivée du flux par rapport au temps
+
+Le signe négatif vient de la **loi de Lenz**.
+
+## La loi de Lenz
+
+> **Loi de Lenz :** Le courant induit s'établit dans un sens tel qu'il s'oppose par ses effets à la cause qui lui a donné naissance.
+
+**Autrement dit :** Si le flux augmente, le courant induit crée un champ magnétique qui s'oppose à cette augmentation. Si le flux diminue, le courant induit crée un champ qui s'oppose à cette diminution.
+
+<Note>
+  La loi de Lenz est une conséquence du principe de conservation de l'énergie. Si le courant induit aidait la variation de flux au lieu de s'y opposer, on aurait une création d'énergie sans source, ce qui est impossible.
+</Note>
+
+## Conditions d'induction
+
+Un courant induit apparaît dans un circuit fermé si le flux magnétique varie, ce qui peut arriver si :
+- Le champ $\vec{B}$ **varie en intensité**
+- La surface S **change** (circuit extensible)
+- L'**orientation** de la surface par rapport au champ change
+- Le circuit **se déplace** dans un champ non uniforme
+
+## L'alternateur
+
+Un **alternateur** est un dispositif qui utilise l'induction pour convertir l'énergie mécanique en énergie électrique alternative.
+
+**Principe :** Une bobine tourne dans un champ magnétique uniforme. Le flux varie sinusoïdalement, ce qui produit une f.é.m. sinusoïdale :
+$$e(t) = E_0 \sin(2\pi f t)$$
+
+Où $E_0$ est l'amplitude de la f.é.m. et $f$ la fréquence de rotation.
+
+## Le transformateur
+
+Un **transformateur** modifie la tension d'un courant alternatif par induction mutuelle entre deux bobines.
+
+Relation de transformation :
+$$\frac{U_2}{U_1} = \frac{N_2}{N_1} = m$$
+
+Où $N_1$ et $N_2$ sont les nombres de spires au primaire et au secondaire, et $m$ le rapport de transformation.
+
+**Conservation de l'énergie (transformateur idéal) :**
+$$U_1 I_1 = U_2 I_2$$
+
+## Exemple résolu
+
+**Énoncé :** Une bobine de 200 spires, de surface S = 50 cm² = 50 × 10⁻⁴ m², est placée dans un champ magnétique perpendiculaire (θ = 0°). Le champ passe de B₁ = 0,5 T à B₂ = 0 T en Δt = 0,1 s. Calcule la f.é.m. induite dans la bobine.
+
+**Solution :**
+```
+Variation de flux pour une spire :
+  ΔΦ = (B₂ - B₁) × S × cos(0°) = (0 - 0,5) × 50 × 10⁻⁴ = -2,5 × 10⁻³ Wb
+
+Variation totale (N spires) :
+  ΔΦ_total = N × ΔΦ = 200 × (-2,5 × 10⁻³) = -0,5 Wb
+
+F.é.m. induite :
+  e = -ΔΦ_total/Δt = -(-0,5)/0,1 = 5 V
+
+Conclusion : La f.é.m. induite est e = 5 V.
+```
+
+## Exercice d'application
+
+<Accordion title="Exercice : Transformateur">
+  Un transformateur a 500 spires au primaire (U₁ = 230 V) et 50 spires au secondaire. Calcule la tension secondaire U₂ et le rapport de transformation.
+  
+  **Correction :**
+  m = N₂/N₁ = 50/500 = 0,1
+  U₂ = m × U₁ = 0,1 × 230 = **23 V**
+  C'est un transformateur **abaisseur** (m < 1).
+</Accordion>

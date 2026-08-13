@@ -1,0 +1,106 @@
+---
+title: "Introduction à la physique quantique : dualité onde-corpuscule et quantification"
+sidebarTitle: "Physique Quantique"
+description: "Cours de Terminale sur la physique quantique : quantification de l'énergie, effet photoélectrique, dualité onde-corpuscule et modèle de Bohr de l'atome d'hydrogène."
+---
+
+La **physique quantique** est née au début du XXe siècle pour expliquer des phénomènes que la physique classique ne pouvait pas décrire. Elle révolutionne notre conception de la matière et de la lumière à l'échelle des atomes et des particules subatomiques.
+
+## La quantification de l'énergie
+
+### Le rayonnement du corps noir
+
+En 1900, Max Planck résout le problème du rayonnement du corps noir en proposant que l'énergie des oscillateurs n'est pas continue, mais **quantifiée** : elle est un multiple entier d'un quantum d'énergie.
+
+$$E = h \cdot f$$
+
+Où :
+- $E$ : énergie d'un quantum en joules (J)
+- $h = 6,626 \times 10^{-34}$ J·s : constante de Planck
+- $f$ : fréquence du rayonnement en hertz (Hz)
+
+### Le photon
+
+Einstein (1905) généralise l'idée de Planck : la lumière elle-même est quantifiée. Elle est composée de **photons**, des grains d'énergie de valeur :
+
+$$E_{photon} = h \cdot f = \frac{h \cdot c}{\lambda}$$
+
+Un photon possède à la fois des propriétés corpusculaires (quantité de mouvement $p = h/\lambda$) et ondulatoires (longueur d'onde λ, fréquence f).
+
+## L'effet photoélectrique
+
+L'**effet photoélectrique** est l'émission d'électrons par un métal lorsqu'il est éclairé par une lumière de fréquence suffisamment élevée.
+
+**Observations expérimentales :**
+- En dessous d'une **fréquence seuil** f₀, aucun électron n'est émis, quelle que soit l'intensité
+- Au-dessus de f₀, des électrons sont émis immédiatement
+- L'énergie cinétique des électrons émis dépend de la fréquence, pas de l'intensité
+
+**Explication par Einstein :**
+
+$$E_c = hf - W$$
+
+Où $W$ est le **travail d'extraction** (énergie minimale pour arracher un électron au métal).
+
+La fréquence seuil vérifie : $f_0 = W/h$
+
+<Note>
+  Einstein a reçu le prix Nobel de physique 1921 pour l'explication de l'effet photoélectrique, et non pour la relativité restreinte.
+</Note>
+
+## La dualité onde-corpuscule
+
+De Broglie (1924) propose que toute particule matérielle possède aussi des propriétés ondulatoires. La **longueur d'onde de De Broglie** associée à une particule de quantité de mouvement $p = mv$ est :
+
+$$\lambda = \frac{h}{p} = \frac{h}{mv}$$
+
+**Domaine d'application :** La longueur d'onde de De Broglie n'est perceptible qu'à l'échelle atomique (pour des particules très légères à grande vitesse).
+
+## Le modèle de Bohr de l'atome d'hydrogène
+
+Bohr (1913) propose un modèle quantifié de l'atome d'hydrogène :
+- L'électron ne peut occuper que des **orbites autorisées** d'énergie $E_n$ bien déterminée
+- Les niveaux d'énergie sont quantifiés : $E_n = -\frac{13,6}{n^2}$ eV (n = 1, 2, 3...)
+- Lors du passage d'un niveau $n$ à un niveau $m < n$, l'atome émet un photon d'énergie :
+
+$$E_{photon} = E_n - E_m = h \cdot f$$
+
+**Niveaux d'énergie de l'hydrogène :**
+
+| Niveau n | Énergie E_n (eV) |
+|----------|------------------|
+| 1 (fondamental) | -13,6 |
+| 2 | -3,40 |
+| 3 | -1,51 |
+| 4 | -0,85 |
+| ∞ (ionisé) | 0 |
+
+## Exemple résolu
+
+**Énoncé :** Un photon est émis lors de la transition n=3 → n=2 dans l'atome d'hydrogène. Calcule son énergie et sa longueur d'onde. (h = 6,626 × 10⁻³⁴ J·s, c = 3,0 × 10⁸ m·s⁻¹, 1 eV = 1,6 × 10⁻¹⁹ J)
+
+**Solution :**
+```
+Énergie du photon :
+  E = E₃ - E₂ = (-1,51) - (-3,40) = 1,89 eV
+  E = 1,89 × 1,6 × 10⁻¹⁹ = 3,024 × 10⁻¹⁹ J
+
+Fréquence :
+  f = E/h = (3,024 × 10⁻¹⁹) / (6,626 × 10⁻³⁴) = 4,56 × 10¹⁴ Hz
+
+Longueur d'onde :
+  λ = c/f = (3,0 × 10⁸) / (4,56 × 10¹⁴) ≈ 6,58 × 10⁻⁷ m = 658 nm
+
+Conclusion : C'est une raie rouge dans le domaine visible (λ ≈ 658 nm).
+```
+
+## Exercice d'application
+
+<Accordion title="Exercice : Effet photoélectrique">
+  Un métal a un travail d'extraction W = 2,0 eV. Une lumière de fréquence f = 8,0 × 10¹⁴ Hz l'éclaire. Des électrons sont-ils émis ? Si oui, quelle est leur énergie cinétique maximale ? (h = 6,626 × 10⁻³⁴ J·s, 1 eV = 1,6 × 10⁻¹⁹ J)
+  
+  **Correction :**
+  E_photon = hf = 6,626 × 10⁻³⁴ × 8,0 × 10¹⁴ = 5,30 × 10⁻¹⁹ J = 3,31 eV
+  Comme E_photon (3,31 eV) > W (2,0 eV), **des électrons sont bien émis**.
+  E_c = E_photon - W = 3,31 - 2,0 = **1,31 eV = 2,10 × 10⁻¹⁹ J**
+</Accordion>

@@ -1,0 +1,124 @@
+---
+title: "La relativité restreinte : postulats, dilatation du temps et contraction des longueurs"
+sidebarTitle: "Relativité"
+description: "Cours de Terminale sur la relativité restreinte d'Einstein : postulats, dilatation du temps, contraction des longueurs, énergie de masse E=mc² et paradoxe des jumeaux."
+---
+
+La **relativité restreinte**, formulée par Albert Einstein en 1905, est l'une des théories les plus révolutionnaires de la physique. Elle remet en question les notions intuitives de temps et d'espace, et prédit des effets surprenants pour des objets se déplaçant à des vitesses proches de celle de la lumière.
+
+## Les deux postulats de la relativité restreinte
+
+**Postulat 1 — Principe de relativité :**
+> Les lois de la physique sont les mêmes dans tous les référentiels inertiels (galiléens).
+
+**Postulat 2 — Invariance de la vitesse de la lumière :**
+> La vitesse de la lumière dans le vide est la même pour tous les observateurs inertiels, quelle que soit la vitesse de la source ou de l'observateur.
+
+$$c = 3,00 \times 10^8 \text{ m·s}^{-1} \text{ (constante universelle)}$$
+
+Ces deux postulats semblent anodins mais entraînent des conséquences radicales sur la nature du temps et de l'espace.
+
+## Le facteur de Lorentz
+
+Le **facteur de Lorentz** γ (gamma) apparaît dans toutes les formules de la relativité restreinte :
+
+$$\gamma = \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}}$$
+
+Où $v$ est la vitesse du référentiel en mouvement.
+
+**Propriétés :**
+- $\gamma \geq 1$ toujours
+- Pour $v \ll c$ : $\gamma \approx 1$ (physique classique)
+- Pour $v \to c$ : $\gamma \to \infty$ (effets relativistes très importants)
+
+| v/c | γ |
+|-----|---|
+| 0,1 | 1,005 |
+| 0,5 | 1,155 |
+| 0,9 | 2,29 |
+| 0,99 | 7,09 |
+| 0,999 | 22,4 |
+
+## La dilatation du temps
+
+> Un observateur en mouvement mesure un intervalle de temps **plus long** qu'un observateur au repos par rapport à l'événement.
+
+$$\Delta t = \gamma \cdot \Delta t_0$$
+
+Où :
+- $\Delta t_0$ : **durée propre** (mesurée par l'observateur au repos par rapport à l'événement)
+- $\Delta t$ : **durée dilatée** (mesurée par l'observateur en mouvement)
+- $\gamma \geq 1$ donc $\Delta t \geq \Delta t_0$ : le temps s'**écoule plus lentement** dans le référentiel en mouvement
+
+**Exemple concret :** Des muons produits dans la haute atmosphère à v = 0,998c ont une durée de vie propre de Δt₀ = 2,2 μs. Mais les observateurs terrestres les voient vivre plus longtemps :
+$$\Delta t = \gamma \Delta t_0 \approx 15,8 \times 2,2 \approx 35 \text{ μs}$$
+
+Ce qui leur permet de parcourir 10 km et d'atteindre le sol, malgré une durée de vie apparemment insuffisante.
+
+## La contraction des longueurs
+
+> Un objet en mouvement semble **plus court** dans sa direction de mouvement qu'au repos.
+
+$$L = \frac{L_0}{\gamma}$$
+
+Où :
+- $L_0$ : **longueur propre** (mesurée dans le référentiel où l'objet est au repos)
+- $L$ : **longueur contractée** (mesurée dans un référentiel où l'objet est en mouvement)
+- $\gamma \geq 1$ donc $L \leq L_0$ : la longueur est **plus courte** dans le référentiel en mouvement
+
+<Note>
+  La dilatation du temps et la contraction des longueurs sont des effets **réels et mesurés expérimentalement**, pas de simples illusions d'optique. Les horloges atomiques embarquées sur des avions et des satellites confirment ces prédictions avec grande précision.
+</Note>
+
+## L'énergie de masse : E = mc²
+
+Einstein démontre que masse et énergie sont équivalentes :
+
+$$E = m c^2$$
+
+Pour un objet au repos, son **énergie de masse** est $E_0 = m_0 c^2$.
+
+Pour un objet en mouvement à la vitesse $v$ :
+$$E = \gamma m_0 c^2$$
+
+**L'énergie cinétique relativiste :**
+$$E_c = (\gamma - 1) m_0 c^2$$
+
+**Applications :** La fission et la fusion nucléaires libèrent de l'énergie en convertissant une infime fraction de masse en énergie (via $E = mc^2$).
+
+## Exemple résolu
+
+**Énoncé :** Un vaisseau spatial se déplace à v = 0,6c. Calcule le facteur γ. Si un événement dure Δt₀ = 10 s dans le vaisseau, quelle est sa durée pour un observateur terrestre ?
+
+**Solution :**
+```
+Facteur de Lorentz :
+  γ = 1/√(1 - v²/c²) = 1/√(1 - 0,36) = 1/√0,64 = 1/0,8 = 1,25
+
+Dilatation du temps :
+  Δt = γ × Δt₀ = 1,25 × 10 = 12,5 s
+
+Conclusion : L'événement dure 12,5 s pour l'observateur terrestre.
+Le temps s'écoule plus lentement dans le vaisseau en mouvement.
+```
+
+## Le paradoxe des jumeaux
+
+Si un jumeau voyage à grande vitesse et revient sur Terre, il aura vieilli **moins vite** que son jumeau resté sur Terre. Ce n'est pas un paradoxe réel : les deux référentiels ne sont pas symétriques (le voyageur a accéléré).
+
+**Exemple :** Un astronaute voyage à v = 0,8c pendant 6 ans (selon lui). Son frère jumeau a vieilli de :
+```
+γ = 1/√(1 - 0,64) = 1/√0,36 = 1/0,6 ≈ 1,67
+Δt = γ × Δt₀ = 1,67 × 6 = 10 ans (durée terrestre)
+```
+À son retour, l'astronaute a 6 ans de plus, son jumeau en a 10 de plus.
+
+## Exercice d'application
+
+<Accordion title="Exercice : Contraction des longueurs">
+  Un vaisseau de longueur propre L₀ = 100 m se déplace à v = 0,8c. Quelle longueur mesure un observateur terrestre ?
+  
+  **Correction :**
+  γ = 1/√(1 - 0,64) = 1/√0,36 = 1/0,6 ≈ 1,667
+  L = L₀/γ = 100/1,667 ≈ **60 m**
+</Accordion>

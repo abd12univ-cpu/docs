@@ -1,0 +1,105 @@
+---
+title: "Puissance et énergie électrique : calculs et applications pratiques"
+sidebarTitle: "Puissance et Énergie"
+description: "Cours de Première sur la puissance et l'énergie électrique : formules P=UI et E=Pt, effet Joule, consommation électrique et facture d'électricité."
+---
+
+La puissance et l'énergie électrique sont des notions clés pour comprendre la consommation de nos appareils, calculer des factures d'électricité et analyser les transferts d'énergie dans les circuits. Ce cours te donne les formules essentielles et les méthodes de calcul.
+
+## La puissance électrique
+
+La **puissance électrique** $P$ mesure la quantité d'énergie échangée par unité de temps :
+
+$$P = U \times I$$
+
+- $P$ : puissance en watts (W)
+- $U$ : tension en volts (V)
+- $I$ : intensité en ampères (A)
+
+Combinée à la loi d'Ohm (U = RI), on obtient également :
+
+$$P = R \times I^2 = \frac{U^2}{R}$$
+
+## L'énergie électrique
+
+L'**énergie électrique** $E$ consommée ou produite pendant une durée $t$ est :
+
+$$E = P \times t = U \times I \times t$$
+
+- $E$ : énergie en joules (J) ou en kilowattheures (kWh)
+- $P$ : puissance en watts (W)
+- $t$ : durée en secondes (s) — ou en heures si E est en Wh
+
+**Conversion :** 1 kWh = 3 600 000 J = 3,6 × 10⁶ J
+
+## L'effet Joule
+
+L'**effet Joule** est la production de chaleur lors du passage du courant dans un conducteur résistif. L'énergie dissipée sous forme thermique est :
+
+$$Q = R \times I^2 \times t$$
+
+L'effet Joule est utilisé dans :
+- Les radiateurs électriques
+- Les grille-pain, fers à repasser
+- Les fusibles (qui fondent quand le courant est trop fort)
+
+<Note>
+  Dans tout circuit, une partie de l'énergie électrique est inévitablement dissipée par effet Joule dans les conducteurs. C'est une des raisons pour lesquelles le rendement des appareils n'est jamais 100 %.
+</Note>
+
+## Les unités d'énergie en pratique
+
+| Unité | Valeur | Usage |
+|-------|--------|-------|
+| Joule (J) | Unité SI | Physique, sciences |
+| Wattheure (Wh) | 1 Wh = 3600 J | Petits appareils |
+| Kilowattheure (kWh) | 1 kWh = 3,6 × 10⁶ J | Facture d'électricité |
+
+## Exemple résolu
+
+**Énoncé :** Un four électrique de puissance P = 2000 W fonctionne pendant t = 1,5 h. Calcule l'énergie consommée en joules et en kWh.
+
+**Solution :**
+```
+Données :
+  P = 2000 W
+  t = 1,5 h = 1,5 × 3600 = 5400 s
+
+Énergie en joules :
+  E = P × t = 2000 × 5400 = 10 800 000 J = 1,08 × 10⁷ J
+
+Énergie en kWh :
+  E = P(kW) × t(h) = 2 kW × 1,5 h = 3 kWh
+
+Conclusion : Le four consomme 3 kWh pendant cette utilisation.
+```
+
+## Calcul d'une facture d'électricité
+
+Les fournisseurs d'électricité facturent en **kilowattheures (kWh)**.
+
+**Exemple :** Si le prix du kWh est 0,18 €, combien coûtent 3 kWh ?
+```
+Coût = énergie × prix unitaire
+Coût = 3 × 0,18 = 0,54 €
+```
+
+<Tip>
+  Pour réduire ta facture d'électricité, préfère les appareils de classe énergétique A ou A+ (moins de consommation pour le même service rendu).
+</Tip>
+
+## Exercices d'application
+
+<Accordion title="Exercice 1 : Puissance d'une lampe">
+  Une lampe est alimentée sous U = 230 V et traverse par I = 0,087 A. Calcule sa puissance.
+  
+  **Correction :**
+  P = U × I = 230 × 0,087 = **20 W**
+</Accordion>
+
+<Accordion title="Exercice 2 : Énergie consommée">
+  Un chauffe-eau de 3 kW fonctionne 2 h par jour pendant 30 jours. Quelle est l'énergie consommée en kWh ?
+  
+  **Correction :**
+  E = P × t = 3 kW × (2 h/jour × 30 jours) = 3 × 60 = **180 kWh**
+</Accordion>

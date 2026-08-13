@@ -1,0 +1,107 @@
+---
+title: "Deuxième loi de Newton : relation fondamentale de la dynamique"
+sidebarTitle: "2e Loi de Newton"
+description: "Cours de Première sur la deuxième loi de Newton (F=ma) : énoncé, applications, résolution de problèmes de dynamique et exemples concrets."
+---
+
+La **deuxième loi de Newton** est la relation centrale de la mécanique classique. Elle relie la force nette appliquée à un objet, sa masse et l'accélération qui en résulte. Cette loi te permet de calculer l'accélération de n'importe quel système soumis à des forces.
+
+## Énoncé de la deuxième loi de Newton
+
+> **Deuxième loi de Newton :** Dans un référentiel galiléen, la somme des forces extérieures appliquées à un système est égale au produit de la masse par l'accélération du centre de masse.
+
+$$\sum \vec{F} = m \times \vec{a}$$
+
+Où :
+- $\sum \vec{F}$ : somme vectorielle des forces extérieures en newtons (N)
+- $m$ : masse en kilogrammes (kg)
+- $\vec{a}$ : accélération en mètres par seconde au carré (m·s⁻²)
+
+<Note>
+  Cette loi est aussi appelée **Principe fondamental de la dynamique (PFD)**. Elle généralise le principe d'inertie : si ΣF = 0, alors a = 0 (on retrouve le premier principe).
+</Note>
+
+## Conséquences immédiates
+
+- Si la somme des forces est nulle → accélération nulle → vitesse constante (1er principe)
+- Plus la masse est grande, plus il faut de force pour obtenir la même accélération
+- La direction et le sens de l'accélération sont les mêmes que ceux de la force résultante
+
+## Méthode d'application
+
+<Steps>
+  <Step title="Choisir le système et le référentiel">
+    Identifie l'objet étudié et précise le référentiel (terrestre, géocentrique...).
+  </Step>
+  <Step title="Bilan des forces">
+    Liste et représente toutes les forces extérieures exercées sur le système (poids, réaction normale, tension, frottement...).
+  </Step>
+  <Step title="Appliquer la 2e loi de Newton">
+    Écris l'équation vectorielle ΣF = m × a.
+  </Step>
+  <Step title="Projeter sur les axes">
+    Choisis un repère et projette l'équation vectorielle sur chaque axe pour obtenir des équations scalaires.
+  </Step>
+  <Step title="Résoudre et conclure">
+    Résous le système d'équations pour trouver l'inconnue (accélération, force, masse...).
+  </Step>
+</Steps>
+
+## Exemple résolu — Plan horizontal
+
+**Énoncé :** Un bloc de masse m = 4 kg est poussé horizontalement par une force F = 20 N. Le frottement vaut f = 8 N. Calcule l'accélération du bloc.
+
+**Solution :**
+```
+Système : bloc (m = 4 kg)
+Référentiel : terrestre (galiléen)
+
+Bilan des forces (axe horizontal x positif vers la droite) :
+  - Force motrice : F = +20 N
+  - Frottement : f = -8 N (opposé au mouvement)
+
+Application de la 2e loi de Newton (axe x) :
+  ΣF_x = m × a_x
+  F - f = m × a
+  20 - 8 = 4 × a
+  12 = 4 × a
+  a = 3 m·s⁻²
+
+Conclusion : L'accélération du bloc est a = 3 m·s⁻² dans le sens du déplacement.
+```
+
+## Exemple résolu — Plan incliné
+
+**Énoncé :** Un objet de masse m = 5 kg glisse sans frottement sur un plan incliné à θ = 30°. Calcule son accélération.
+
+**Solution :**
+```
+Bilan des forces :
+  - Poids P = mg = 5 × 9,8 = 49 N (vertical vers le bas)
+  - Réaction normale N (perpendiculaire au plan)
+  - Pas de frottement
+
+Projection sur l'axe du plan (positif vers le bas du plan) :
+  ΣF = m × a
+  P × sin(θ) = m × a
+  mg × sin(30°) = m × a
+  a = g × sin(30°) = 9,8 × 0,5 = 4,9 m·s⁻²
+
+Conclusion : L'objet accélère à 4,9 m·s⁻² le long du plan.
+```
+
+## Exercices d'application
+
+<Accordion title="Exercice 1 : Force et accélération">
+  Une force résultante de 30 N est appliquée sur un objet de masse 6 kg. Calcule l'accélération.
+  
+  **Correction :**
+  a = F/m = 30/6 = **5 m·s⁻²**
+</Accordion>
+
+<Accordion title="Exercice 2 : Trouver une masse">
+  Une force nette de 120 N produit une accélération de 4 m·s⁻² sur un objet. Quelle est sa masse ?
+  
+  **Correction :**
+  m = F/a = 120/4 = **30 kg**
+</Accordion>

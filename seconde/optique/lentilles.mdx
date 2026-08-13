@@ -1,0 +1,97 @@
+---
+title: "Lentilles convergentes : construction d'images et formules optiques"
+sidebarTitle: "Lentilles"
+description: "Cours de Seconde sur les lentilles convergentes : rayons particuliers, construction d'image, relation de conjugaison et grandissement."
+---
+
+Les lentilles convergentes sont présentes partout : dans les lunettes, les appareils photo, les microscopes et l'œil humain. Ce cours t'explique comment une lentille convergente forme une image et comment calculer ses caractéristiques.
+
+## La lentille convergente
+
+Une **lentille convergente** fait converger les rayons lumineux parallèles vers un seul point : le **foyer image** F'.
+
+Caractéristiques d'une lentille convergente :
+- **Centre optique O** : point central de la lentille
+- **Foyer image F'** : point de convergence des rayons parallèles à l'axe optique
+- **Foyer objet F** : point symétrique de F' par rapport à O
+- **Distance focale f'** : distance OF' (positive pour une lentille convergente)
+- **Vergence V** : $V = 1/f'$ en **dioptries (δ)**, avec f' en mètres
+
+## Les trois rayons particuliers
+
+Pour construire l'image d'un objet, utilise ces trois rayons :
+
+1. **Rayon parallèle à l'axe** → passe par F' après la lentille
+2. **Rayon passant par O** → ne dévie pas (passe tout droit)
+3. **Rayon passant par F** → ressort parallèle à l'axe après la lentille
+
+L'intersection de deux de ces rayons (après la lentille) donne la position de l'image.
+
+## Nature et position de l'image
+
+| Position de l'objet | Position de l'image | Nature |
+|--------------------|--------------------|---------|
+| Au-delà de 2F | Entre F' et 2F' | Réelle, renversée, réduite |
+| En 2F | En 2F' | Réelle, renversée, même taille |
+| Entre F et 2F | Au-delà de 2F' | Réelle, renversée, agrandie |
+| En F | À l'infini | Pas d'image |
+| Entre O et F | Du même côté que l'objet | Virtuelle, droite, agrandie |
+
+<Note>
+  Une image **réelle** peut être projetée sur un écran. Une image **virtuelle** ne peut pas être projetée : on la voit en regardant à travers la lentille.
+</Note>
+
+## La relation de conjugaison
+
+Pour calculer la position de l'image sans construction graphique, on utilise la **relation de conjugaison** :
+
+$$\frac{1}{\overline{OA'}} - \frac{1}{\overline{OA}} = \frac{1}{f'}$$
+
+Où :
+- $\overline{OA}$ : distance algébrique de O à l'objet A (négative si l'objet est avant la lentille)
+- $\overline{OA'}$ : distance algébrique de O à l'image A'
+- $f'$ : distance focale de la lentille
+
+## Le grandissement
+
+Le **grandissement** $\gamma$ indique la taille relative de l'image par rapport à l'objet :
+
+$$\gamma = \frac{\overline{A'B'}}{\overline{AB}} = \frac{\overline{OA'}}{\overline{OA}}$$
+
+- $|\gamma| > 1$ → image agrandie
+- $|\gamma| < 1$ → image réduite
+- $\gamma < 0$ → image renversée
+- $\gamma > 0$ → image droite
+
+## Exemple résolu
+
+**Énoncé :** Une lentille convergente a une distance focale f' = 10 cm. Un objet est placé à 30 cm en avant de la lentille (OA = -30 cm). Calcule la position de l'image et le grandissement.
+
+**Solution :**
+```
+Relation de conjugaison :
+  1/OA' - 1/OA = 1/f'
+  1/OA' = 1/f' + 1/OA
+  1/OA' = 1/10 + 1/(-30)
+  1/OA' = 3/30 - 1/30 = 2/30
+  OA' = 15 cm
+
+Grandissement :
+  γ = OA'/OA = 15/(-30) = -0,5
+
+Conclusion : L'image est réelle (OA' > 0), située à 15 cm après la lentille.
+Elle est renversée (γ < 0) et réduite (|γ| < 1).
+```
+
+## Exercice d'application
+
+<Accordion title="Exercice : Image formée par une lentille">
+  Une lentille de vergence V = 5 δ (dioptries) forme l'image d'un objet situé à OA = -40 cm.
+  Calcule la distance focale, puis la position et la nature de l'image.
+  
+  **Correction :**
+  - f' = 1/V = 1/5 = 0,20 m = 20 cm
+  - 1/OA' = 1/f' + 1/OA = 1/20 + 1/(-40) = 2/40 - 1/40 = 1/40
+  - OA' = 40 cm → image réelle, de l'autre côté de la lentille
+  - γ = OA'/OA = 40/(-40) = -1 → image renversée, même taille que l'objet
+</Accordion>

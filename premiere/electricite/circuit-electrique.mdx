@@ -1,0 +1,104 @@
+---
+title: "Circuit électrique en Première : composants, schéma et lois de base"
+sidebarTitle: "Circuit Électrique"
+description: "Cours de Première sur les circuits électriques : composants fondamentaux, conventions de schéma, branchements en série et en dérivation, lois des nœuds et des mailles."
+---
+
+Les circuits électriques sont présents dans tous les appareils de notre quotidien. Ce cours te présente les composants essentiels d'un circuit électrique, comment les schématiser et les premières lois qui en gouvernent le comportement.
+
+## Les grandeurs électriques fondamentales
+
+### La charge électrique
+
+La **charge électrique** $q$ est la propriété fondamentale des particules chargées. Elle s'exprime en **coulombs (C)**.
+
+### L'intensité du courant électrique
+
+L'**intensité** $I$ mesure le débit de charges électriques à travers une section du circuit :
+
+$$I = \frac{q}{t}$$
+
+- $I$ : intensité en ampères (A)
+- $q$ : charge électrique en coulombs (C)
+- $t$ : durée en secondes (s)
+
+### La tension (différence de potentiel)
+
+La **tension** $U$ entre deux points A et B est la différence de potentiel électrique entre ces points. Elle s'exprime en **volts (V)** et se mesure avec un **voltmètre** branché en **dérivation**.
+
+## Composants d'un circuit et symboles
+
+| Composant | Symbole | Rôle |
+|-----------|---------|------|
+| Générateur (pile, batterie) | Deux traits parallèles inégaux | Fournit l'énergie électrique |
+| Résistance | Rectangle ou zigzag | Limite le courant |
+| Lampe | Cercle avec croix | Convertit énergie électrique en lumière |
+| Interrupteur | Segment mobile | Ouvre ou ferme le circuit |
+| Condensateur | Deux traits parallèles égaux | Stocke l'énergie électrique |
+| Bobine | Arc en demi-cercles | Stocke l'énergie magnétique |
+
+## Branchements : série et dérivation
+
+### Circuit en série
+
+Les composants sont branchés les uns à la suite des autres sur une seule boucle.
+- **L'intensité** est la même en tout point
+- **Les tensions** s'additionnent : U_total = U₁ + U₂ + ...
+
+### Circuit en dérivation (parallèle)
+
+Les composants sont branchés sur plusieurs chemins parallèles.
+- **La tension** est la même aux bornes de chaque branche
+- **Les intensités** s'additionnent au nœud
+
+## La loi des nœuds
+
+Un **nœud** est un point de jonction entre plusieurs fils conducteurs.
+
+> **Loi des nœuds :** La somme des intensités entrant dans un nœud est égale à la somme des intensités sortant de ce nœud.
+
+$$\sum I_{entrants} = \sum I_{sortants}$$
+
+**Exemple :** Si I₁ = 3 A entre dans un nœud et I₂ = 1 A en sort par une branche, alors I₃ = 3 - 1 = **2 A** sort par l'autre branche.
+
+## La loi des mailles
+
+Une **maille** est une boucle fermée dans un circuit.
+
+> **Loi des mailles :** La somme algébrique des tensions le long d'une maille fermée est nulle.
+
+$$\sum U = 0$$
+
+Ou de façon équivalente : la somme des tensions aux bornes des récepteurs est égale à la tension aux bornes du générateur.
+
+$$U_{générateur} = U_{R1} + U_{R2} + \ldots$$
+
+## Exemple résolu
+
+**Énoncé :** Un circuit série comprend une pile de tension E = 12 V, une résistance R₁ et une résistance R₂. On mesure U_{R1} = 7 V. Calcule U_{R2}.
+
+**Solution :**
+```
+Circuit en série → loi des mailles :
+  E = U_R1 + U_R2
+  12 = 7 + U_R2
+  U_R2 = 12 - 7 = 5 V
+
+Conclusion : La tension aux bornes de R₂ est U_R2 = 5 V.
+```
+
+## Exercices d'application
+
+<Accordion title="Exercice 1 : Loi des nœuds">
+  Dans un circuit avec un nœud A, les intensités I₁ = 2 A et I₂ = 3 A entrent dans le nœud. Quelle est l'intensité I₃ qui sort ?
+  
+  **Correction :**
+  I₃ = I₁ + I₂ = 2 + 3 = **5 A**
+</Accordion>
+
+<Accordion title="Exercice 2 : Loi des mailles">
+  Un circuit série contient une pile E = 9 V, une résistance R₁ (U₁ = 3 V) et une lampe (U_L = ?). Calcule U_L.
+  
+  **Correction :**
+  E = U₁ + U_L → U_L = E - U₁ = 9 - 3 = **6 V**
+</Accordion>

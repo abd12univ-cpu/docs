@@ -1,0 +1,127 @@
+---
+title: "La radioactivité : types de désintégrations, loi de décroissance et applications"
+sidebarTitle: "Radioactivité"
+description: "Cours de Terminale sur la radioactivité : noyaux instables, désintégrations alpha, bêta et gamma, loi de décroissance radioactive, demi-vie et applications médicales et énergétiques."
+---
+
+La **radioactivité** est la propriété de certains noyaux atomiques instables à se transformer spontanément en émettant des rayonnements. Découverte par Becquerel en 1896, elle est à la fois source d'énergie (centrales nucléaires) et outil médical (imagerie, radiothérapie).
+
+## Qu'est-ce que la radioactivité ?
+
+Un **noyau radioactif** (ou radionucléide) est un noyau atomique instable qui se désintègre spontanément en émettant des particules ou des rayonnements, se transformant en un noyau plus stable.
+
+**Notation d'un noyau :** $^A_Z X$
+- $A$ : nombre de masse (nombre de nucléons = protons + neutrons)
+- $Z$ : numéro atomique (nombre de protons)
+- $A - Z$ = nombre de neutrons
+
+## Les trois types de radioactivité
+
+### Radioactivité alpha (α)
+
+Émission d'une **particule alpha** $^4_2 He$ (noyau d'hélium-4).
+
+$$^A_Z X \to ^{A-4}_{Z-2} Y + ^4_2 He$$
+
+- Faible pouvoir de pénétration (arrêtée par une feuille de papier)
+- Très ionisante → dangereux si ingéré ou inhalé
+
+### Radioactivité bêta moins (β⁻)
+
+Émission d'un **électron** $e^-$ et d'un antineutrino. Un neutron se transforme en proton.
+
+$$^A_Z X \to ^A_{Z+1} Y + e^- + \bar{\nu}_e$$
+
+- Pouvoir pénétrant moyen (arrêtée par quelques mm d'aluminium)
+
+### Radioactivité bêta plus (β⁺)
+
+Émission d'un **positon** $e^+$ et d'un neutrino. Un proton se transforme en neutron.
+
+$$^A_Z X \to ^A_{Z-1} Y + e^+ + \nu_e$$
+
+### Radioactivité gamma (γ)
+
+Émission d'un **photon gamma** de très haute énergie. Le noyau passe d'un état excité à un état plus stable **sans changer de nature**.
+
+$$^A_Z X^* \to ^A_Z X + \gamma$$
+
+- Très grand pouvoir pénétrant (nécessite du plomb ou du béton pour s'arrêter)
+- Très ionisant à forte dose
+
+## Lois de conservation dans les désintégrations
+
+Lors d'une désintégration radioactive, sont conservés :
+- Le **nombre de masse** A (nombre de nucléons)
+- Le **numéro atomique** Z (ou la charge électrique)
+- L'**énergie** totale
+- La **quantité de mouvement**
+
+## La loi de décroissance radioactive
+
+Le nombre $N(t)$ de noyaux radioactifs restants à l'instant $t$ décroît exponentiellement :
+
+$$N(t) = N_0 \cdot e^{-\lambda t}$$
+
+Où :
+- $N_0$ : nombre initial de noyaux
+- $\lambda$ : constante radioactive (en s⁻¹)
+- $t$ : temps en secondes
+
+### La demi-vie (période radioactive) $t_{1/2}$
+
+La **demi-vie** $t_{1/2}$ est le temps au bout duquel la moitié des noyaux se sont désintégrés :
+
+$$t_{1/2} = \frac{\ln 2}{\lambda} = \frac{0,693}{\lambda}$$
+
+Ou de façon équivalente : $N(t_{1/2}) = N_0/2$
+
+| Radionucléide | Demi-vie | Usage |
+|---------------|---------|-------|
+| Carbone-14 ($^{14}C$) | 5730 ans | Datation archéologique |
+| Iode-131 ($^{131}I$) | 8 jours | Traitement thyroïde |
+| Uranium-238 ($^{238}U$) | 4,5 milliards d'ans | Datation géologique |
+| Technétium-99m | 6 heures | Imagerie médicale |
+
+## Exemple résolu
+
+**Énoncé :** Un échantillon de carbone-14 a une activité initiale A₀. Sa demi-vie est t_{1/2} = 5730 ans. Après combien de temps reste-t-il N₀/8 noyaux ?
+
+**Solution :**
+```
+N(t) = N₀ / 8 = N₀ × (1/2)³
+
+Cela correspond à 3 demi-vies :
+  t = 3 × t_{1/2} = 3 × 5730 = 17 190 ans
+
+Conclusion : Il reste 1/8 des noyaux après 17 190 ans.
+```
+
+## Applications de la radioactivité
+
+<CardGroup cols={2}>
+  <Card title="Énergie nucléaire" icon="bolt">
+    La fission de l'uranium-235 libère une énergie considérable. Une centrale nucléaire produit de l'électricité à partir de cette énergie thermique.
+  </Card>
+  <Card title="Médecine nucléaire" icon="stethoscope">
+    Le technétium-99m est utilisé en scintigraphie. L'iode-131 traite les cancers de la thyroïde. Le PET-scan utilise des β⁺.
+  </Card>
+  <Card title="Datation au carbone-14" icon="clock">
+    Le rapport ¹⁴C/¹²C diminue après la mort d'un organisme. Sa mesure permet de dater des restes organiques jusqu'à ~50 000 ans.
+  </Card>
+  <Card title="Radiothérapie" icon="radiation">
+    Les rayonnements gamma détruisent les cellules cancéreuses en endommageant leur ADN.
+  </Card>
+</CardGroup>
+
+## Exercice d'application
+
+<Accordion title="Exercice : Équation de désintégration">
+  Complète l'équation de désintégration alpha du radium-226 : $^{226}_{88}Ra \to ^A_Z X + ^4_2 He$
+  
+  **Correction :**
+  Conservation du nombre de masse : A = 226 - 4 = **222**
+  Conservation du numéro atomique : Z = 88 - 2 = **86**
+  L'élément de Z = 86 est le **radon** (Rn)
+  → $^{226}_{88}Ra \to ^{222}_{86}Rn + ^4_2 He$
+</Accordion>

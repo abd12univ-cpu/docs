@@ -1,13 +1,11 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
-  "name": "Lycée Physique",
+  "projectType": "saas",
+  "projectName": "Lycée Physique",
+  "projectDescription": "Plateforme d'autoformation en physique pour les élèves de lycée, couvrant les programmes de Seconde, Première et Terminale.",
   "theme": "almond",
-  "colors": {
-    "primary": "#ef7025",
-    "light": "#eec9bc",
-    "dark": "#4fa1ab"
-  },
-  "favicon": "/favicon.svg",
+  "primaryColor": "#ef7025",
+  "lightColor": "#eec9bc",
+  "darkColor": "#4fa1ab",
   "navigation": {
     "tabs": [
       {
@@ -119,5 +117,14 @@
         ]
       }
     ]
-  }
+  },
+  "keyFeatures": [
+    "Cours structurés par niveau (Seconde, Première, Terminale)",
+    "Exercices résolus avec démarche expliquée pas à pas",
+    "Méthodes de résolution et rédaction scientifique",
+    "Programme conforme aux instructions officielles",
+    "Navigation intuitive par chapitre et notion",
+    "Exemples concrets et illustrations physiques"
+  ],
+  "publicApiSurface": []
 }
